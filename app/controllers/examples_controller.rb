@@ -9,5 +9,6 @@ class ExamplesController < ApplicationController
   end
 
   def index
+    @examples = Example.all
   end
 end

@@ -1,2 +1,16 @@
-<h1>Examples#index</h1>
-<p>Find me in app/views/examples/index.html.erb</p>
+<h1>Examples</h1>
+<table>
+  <tr>
+    <th> Date </th>
+    <th> Title </th>
+    <th> Examples </th>
+  </tr>
+
+  <% @examples.each do |example| %>
+  <tr>
+    <td><%= example.created_at %></td>
+    <td><a href="<%= example.url %>"><%= example.title %></a></td>
+    <td><%= example.text %></td>
+  </tr>
+  <% end %>
+</table>
