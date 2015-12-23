@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :users
   resources :examples
+
+  get '/newEx', to: 'examples#create_by_bookmarklet'
 end
