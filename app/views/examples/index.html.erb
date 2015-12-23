@@ -6,7 +6,7 @@
     <th> Examples </th>
   </tr>
 
-  <a href="javascript:var d=document, s=getSelection().getRangeAt(0), e=encodeURIComponent, m=120, f='http://localhost:3000/newEx', t0=s.startContainer, t1=s.startOffset, t2=s.endContainer, t3=s.endOffset, u=t0.data.substring(t1>m?t1-m:0,t1), v=t2.data.substr(t3,m), l='?u='+e(d.location.href)+'&t='+e(d.title)+'&a='+e(u)+'&b='+e(s.toString())+'&c='+e(v); open(f+l,'t','toolbar=0,resizable=0,status=0,width=380,height=80');void(0)">+a5y0</a> そして公開してもいいページに行って、単語を選択して bookmarkletを実行してください。
+  <a href="javascript:var d=document, s=getSelection().getRangeAt(0), e=encodeURIComponent, m=120, f='<%= request.base_url %>/newEx', t0=s.startContainer, t1=s.startOffset, t2=s.endContainer, t3=s.endOffset, u=t0.data.substring(t1>m?t1-m:0,t1), v=t2.data.substr(t3,m), l='?u='+e(d.location.href)+'&t='+e(d.title)+'&a='+e(u)+'&b='+e(s.toString())+'&c='+e(v); open(f+l,'t','toolbar=0,resizable=0,status=0,width=380,height=80');void(0)">+a5y0</a> そして公開してもいいページに行って、単語を選択して bookmarkletを実行してください。
   
   <% @examples.each do |example| %>
   <tr>
